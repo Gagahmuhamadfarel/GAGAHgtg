@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="gagahre123">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-4.8343E-05 -0.0037941 0.014802"
+        rpy="0 0 0" />
+      <mass
+        value="5" />
+      <inertia
+        ixx="0.012716"
+        ixy="-5.6161E-06"
+        ixz="1.4499E-07"
+        iyy="0.004141"
+        iyz="-5.0533E-09"
+        izz="0.016634" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="welkananbawah">
+    <inertial>
+      <origin
+        xyz="0.00020378 -2.7334E-08 -9.9536E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.1728" />
+      <inertia
+        ixx="6.4174E-05"
+        ixy="-2.3204E-18"
+        ixz="-8.8446E-18"
+        iyy="4.6952E-05"
+        iyz="-1.0306E-17"
+        izz="4.6952E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/welkananbawah.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/welkananbawah.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rodakananbawah"
+    type="continuous">
+    <origin
+      xyz="-0.15483 0.19987 -0.0044227"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="welkananbawah" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      effort="100"
+      velocity="20" />
+    <dynamics
+      damping="2"
+      friction="0.8" />
+  </joint>
+  <link
+    name="welkananatas">
+    <inertial>
+      <origin
+        xyz="0.00020378 -5.7378E-08 -8.5804E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.1728" />
+      <inertia
+        ixx="6.4174E-05"
+        ixy="-5.0471E-18"
+        ixz="-7.7178E-18"
+        iyy="4.6952E-05"
+        iyz="2.3447E-18"
+        izz="4.6952E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/welkananatas.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/welkananatas.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rodakananatas"
+    type="continuous">
+    <origin
+      xyz="-0.15483 -0.20013 -0.0044227"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="welkananatas" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      effort="100"
+      velocity="20" />
+    <dynamics
+      damping="2"
+      friction="0.8" />
+  </joint>
+  <link
+    name="welkiriatas">
+    <inertial>
+      <origin
+        xyz="0.00020378 7.2868E-08 7.3108E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.1728" />
+      <inertia
+        ixx="6.4174E-05"
+        ixy="6.426E-18"
+        ixz="6.5951E-18"
+        iyy="4.6952E-05"
+        iyz="9.8403E-18"
+        izz="4.6952E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/welkiriatas.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/welkiriatas.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rodakiriatas"
+    type="continuous">
+    <origin
+      xyz="0.15442 -0.20013 -0.0044227"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="welkiriatas" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="100"
+      velocity="20" />
+    <dynamics
+      damping="2"
+      friction="0.8" />
+  </joint>
+  <link
+    name="welkiribawah">
+    <inertial>
+      <origin
+        xyz="0.00020378 -7.2988E-08 -7.2988E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.1728" />
+      <inertia
+        ixx="6.4174E-05"
+        ixy="-6.4014E-18"
+        ixz="-6.6006E-18"
+        iyy="4.6952E-05"
+        iyz="9.9107E-18"
+        izz="4.6952E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/welkiribawah.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gagahre123/meshes/welkiribawah.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="welkiribawah"
+    type="continuous">
+    <origin
+      xyz="0.15442 0.19987 -0.0044227"
+      rpy="1.6003 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="welkiribawah" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="100"
+      velocity="20" />
+    <dynamics
+      damping="2"
+      friction="0.8" />
+  </joint>
+</robot>
